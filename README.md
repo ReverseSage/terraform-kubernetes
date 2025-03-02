@@ -51,7 +51,7 @@ kubectl get nodes -o wide
 ```
 then get the port they are forwareded to, run:
 ```
-kubectl get svc -n devops
+kubectl get pod -n devops -o wide
 ```
 then you can access it using `http://[node-IP]:[forwarded-port]` for example http://172.18.0.2:32000
 
